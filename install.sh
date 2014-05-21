@@ -38,12 +38,12 @@ vim -u $HOME/.vimrc.bundles +BundleInstall! +BundleClean +qall
 export SHELL=$system_shell
 
 
-echo "Step5: compile YouCompleteMe"
-echo "It will take a long time, just be patient!"
-echo "If error,you need to compile it yourself"
-echo "cd $CURRENT_DIR/bundle/YouCompleteMe/ && bash -x install.sh --clang-completer"
-cd $CURRENT_DIR/bundle/YouCompleteMe/
-bash -x install.sh --clang-completer
+#echo "Step5: compile YouCompleteMe"
+#echo "It will take a long time, juse be patient!"
+#echo "If error,you need to compile it yourself"
+#echo "cd $CURRENT_DIR/bundle/YouCompleteMe/ && bash -x install.sh --clang-completer"
+#cd $CURRENT_DIR/bundle/YouCompleteMe/
+#bash -x install.sh --clang-completer
 
 #vim bk and undo dir
 if [ ! -d /tmp/vimbk ]
