@@ -185,6 +185,9 @@ set smarttab      " insert tabs on the start of a line according to shiftwidth, 
 set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
 set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
 
+" List format
+set listchars=tab:\|.,trail:-
+
 " A buffer becomes hidden when it is abandoned
 set hidden
 set wildmode=list:longest
@@ -317,7 +320,6 @@ set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
 au InsertLeave * set nopaste
 
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
-
 
 "Smart way to move between windows 分屏窗口移动
 map <C-j> <C-W>j

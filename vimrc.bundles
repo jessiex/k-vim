@@ -401,6 +401,7 @@ let g:pyflakes_use_quickfix = 0
 " for python.vim syntax highlight
 Bundle 'hdima/python-syntax'
 let python_highlight_all = 1
+let python_version_2 = 1
 
 "###### Golang #########
 " 1.install golang and install gocode 'go get github.com/nsf/gocode'
