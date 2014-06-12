@@ -440,4 +440,6 @@ Bundle 'gorodinskiy/vim-coloresque'
 "Bundle 'evanmiller/nginx-vim-syntax'
 
 
+"###### emmet HTML complete #########
+Bundle "mattn/emmet-vim"
 "------------------------------------------- end of configs --------------------------------------------
