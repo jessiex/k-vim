@@ -100,8 +100,7 @@ set mouse-=a             " 鼠标暂不启用, 键盘党....
 set selection=inclusive
 set selectmode=mouse,key
 
-" No annoying sound on errors
-" 去掉输入错误的提示声音
+" No annoying sound on errors " 去掉输入错误的提示声音
 set title                " change the terminal's title
 set novisualbell         " don't beep
 set noerrorbells         " don't beep
@@ -441,6 +440,8 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
+" JS 也删掉
+autocmd BufWrite *.js :call DeleteTrailingWS()
 
 " 定义函数AutoSetFileHead，自动插入文件头
 autocmd BufNewFile *.sh,*.py exec ":call AutoSetFileHead()"
@@ -508,3 +509,10 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
+
+" 修正 isk
+"set iskeyword +=-
+set iskeyword -=.
+
+" less 自动更新
+autocmd BufWritePost *.less :!lessc % > %:p:r.css

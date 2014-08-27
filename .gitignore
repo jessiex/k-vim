@@ -1,4 +1,6 @@
-bundle/*
+/bundle/*
+/bundle_closed/*
+.netrwhist
 *.pyc
 *.bak
 *.bk

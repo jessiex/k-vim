@@ -301,15 +301,15 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | end
 
 "for minibufferexpl
-Bundle 'fholgado/minibufexpl.vim'
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-"解决FileExplorer窗口变小问题
-let g:miniBufExplForceSyntaxEnable = 1
-let g:miniBufExplorerMoreThanOne=2
-let g:miniBufExplCycleArround=1
+"Bundle 'fholgado/minibufexpl.vim'
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1
+""解决FileExplorer窗口变小问题
+"let g:miniBufExplForceSyntaxEnable = 1
+"let g:miniBufExplorerMoreThanOne=2
+"let g:miniBufExplCycleArround=1
 
 " 默认方向键左右可以切换buffer
 nnoremap <TAB> :MBEbn<CR>
@@ -442,4 +442,7 @@ Bundle 'gorodinskiy/vim-coloresque'
 
 "###### emmet HTML complete #########
 Bundle "mattn/emmet-vim"
+
+"###### vim.less ##########
+Bundle 'groenewege/vim-less'
 "------------------------------------------- end of configs --------------------------------------------
