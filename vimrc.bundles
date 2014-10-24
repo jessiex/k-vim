@@ -406,7 +406,7 @@ let python_version_2 = 1
 "###### Golang #########
 " 1.install golang and install gocode 'go get github.com/nsf/gocode'
 " 2.make sure gocode in your path: `which gocode` (add $GOPATH/bin to you $PATH)
-Bundle 'Blackrush/vim-gocode'
+"Bundle 'Blackrush/vim-gocode'
 "Bundle 'fatih/vim-go.git'
 
 "###### Markdown #########
@@ -434,7 +434,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 "not work in iterm2 which termianl selection is not xterm-256
 "Bundle 'ap/vim-css-color'  
 
-Bundle 'gorodinskiy/vim-coloresque'
+Bundle 'tvboxme/vim-coloresque'
 
 "###### nginx #########
 "Bundle 'evanmiller/nginx-vim-syntax'
